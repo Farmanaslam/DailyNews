@@ -135,7 +135,7 @@ const News =(props)=> {
         >
           <div className="container">
         <div className="row">
-          { articles.map((element,i)=>{
+          {articles && articles.map((element,i)=>{
             return  <div className="col md-4" key={i}>
             <Newsitem  title={element.title?element.title.slice(0,45):" "} description={element.description?element.description.slice(0,88):" "} imgurl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name}/>
             </div>
