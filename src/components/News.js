@@ -30,7 +30,7 @@ const News =(props)=> {
   const updateNews=async ()=>{
     props.setProgress(10);
     
-    const url=`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apikey=fbf9271dc1784cb5b65e522170277b16&page=${page}&pageSize=${pageSize}`;
+    const url=`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apikey=976ba8955af04131a5fe5ee6cbd2e978&page=${page}&pageSize=${pageSize}`;
    
     setloading(true)
     // this.setState({loading:true});
@@ -151,7 +151,7 @@ const News =(props)=> {
 
 
     )
-  
+    //976ba8955af04131a5fe5ee6cbd2e978
 }
 
   News.defaultProps={
